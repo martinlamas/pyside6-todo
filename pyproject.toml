@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "todo"
+version = "0.0.1"
+description = ""
+authors = ["Martín Lamas <martin@martinlamas.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+PySide6 = "^6.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+app = "todo.app:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
