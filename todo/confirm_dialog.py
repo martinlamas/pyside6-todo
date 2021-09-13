@@ -10,4 +10,4 @@ class ConfirmDialog(QMessageBox):
         self.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
 
     def exec(self):
-        return True if super().exec() == QMessageBox.Ok else False
+        return super().exec() == QMessageBox.Ok
